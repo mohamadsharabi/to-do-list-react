@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Input and Button Container */
+.input-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Select Dropdown */
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Add Button */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Reset Button */
+.reset-button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #5a6268;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Task Items */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid transparent; /* Border for priority indication */
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+/* Priority Badges */
+.low-priority {
+  border-left-color: #28a745; /* Green */
+}
+
+.medium-priority {
+  border-left-color: #ffc107; /* Yellow */
+}
+
+.high-priority {
+  border-left-color: #dc3545; /* Red */
+}
+
+/* Task Text */
+li p {
+  margin: 0;
+  font-size: 16px;
+  flex: 1; /* Take up remaining space */
+}
+
+/* Delete Button */
+li button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+li button:hover {
+  background: #c82333;
+}
+
+/* No Tasks Message */
+p {
+  text-align: center;
+  color: #555;
+}
